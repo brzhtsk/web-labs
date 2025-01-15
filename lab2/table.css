@@ -1,0 +1,183 @@
+:root {
+    --color-green: #a0ecbc;
+    --color-pink: #ffdcdc;
+    --color-blue: #b8ccfc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+header, footer {
+    min-height: 10vh;
+    width: 100%;
+    background-color: var(--color-blue);
+}
+
+header table, footer table {
+    min-height: 10vh;
+    width: 100%;
+}
+
+header td, footer td {
+    width: 50%;
+    padding: 1%;
+}
+
+.footer-caption, .block-1 {
+    text-align: right;
+}
+
+main {
+    width: 100%;
+    border-width: 2px 0;
+    border-style: solid;
+    overflow-x: hidden;
+}
+
+main table {
+    width: 100%;
+    min-height: 80vh;
+    border-collapse: collapse;
+}
+
+main .first-row > td {
+    border-width: 0 2px;
+    border-style: solid;
+    padding: 0;
+}
+
+main .first-row {
+    height: 50px;
+}
+
+main tr {
+    height: 100%;
+}
+
+.cell-2 {
+    width: 16%;
+    border-left: none; 
+    vertical-align: top;
+}
+
+.cell-3 {
+    width: 83%; 
+    border-left: none; 
+    vertical-align: middle;
+    background-color: var(--color-green);
+}
+
+.cell-4 {
+    width: 52.33%;
+    border-right: 2px solid black;
+    vertical-align: top;
+    padding: 2%;
+}
+
+.cell-4 p {
+    margin-bottom: 15px; 
+    text-align: justify;
+}
+
+.cell-5 { 
+    width: 27.67%;
+    background-color: var(--color-pink);
+    vertical-align: middle;
+    text-align: center;
+}
+
+.block-2, .block-3, .block-4, .block-5 {
+    padding: 5% 10%;
+}
+
+.cell-2, .cell-5 {
+    background-color: var(--color-pink);
+}
+
+.block1 {
+    text-align: right; 
+}
+
+.block2 {
+    text-align: left;
+    padding: 10% 10%;
+}
+
+.block-2 h2 {
+    margin-bottom: 20px;
+}
+
+.block-2 ul {
+    float: right;
+    text-align: left;
+}
+
+.block-4 {
+    padding: 10% 10%;
+}
+
+.block-4 * {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.block-4 p {
+    text-align: end;
+}
+
+.block-4 ul {
+    list-style-position: inside;
+}
+
+.block2, .block5 {
+    border-width: 0;
+}
+
+.block3 {
+    height: 50px;
+    border-bottom: 2px solid black;
+    vertical-align: middle;
+    padding: 1% 2%;
+}
+
+.block4 ul {
+    max-width: 100%;
+    padding: 0% 3%;
+}
+
+.block5 {
+    justify-content: center;
+    text-align: center;     
+    padding: 10px;
+}
+
+.block5 img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+nav {
+    padding: 0% 10%;
+    font-size: 1.2em;
+}

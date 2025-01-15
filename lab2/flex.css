@@ -1,0 +1,150 @@
+:root {
+    --color-green: #a0ecbc;
+    --color-pink: #ffdcdc;
+    --color-blue: #b8ccfc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+header, footer {
+    min-height: 10vh;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-blue);
+}
+
+main {
+    min-height: 80vh;
+    width: 100%;
+    border-width: 2px 0;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-block, .right-block {
+    width: 100%;
+    display: flex;
+}
+
+.right-block {
+    flex-direction: column;
+}
+
+.right-bottom-block {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.block-5 {
+    justify-content: center;
+    align-items: center;
+}
+
+.block-4, .block-5 {
+    width: 100%;
+}
+
+.left-block {
+    width: 20%;
+} 
+
+.block-2, .block-3, .block-4, .block-5 {
+    display: flex;
+    padding: 3% 4%;
+    border-width: 0 2px;
+    border-style: solid;
+}
+
+.header-caption, .footer-caption {
+    max-width: 50%;
+}
+
+.block1, .block6 {
+    max-width: 40%;
+}
+
+.block2 {
+    grid-row: 1 / -1;
+    padding: 9% 6%;
+    width: 100%;
+}
+
+.block2, .block4 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-left: 2px solid black;
+}
+
+.block2, .block5 {
+    background-color: var(--color-pink);
+    border-width: 0;
+}
+
+.block3 {
+    display: flex;
+    height: 9%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--color-green);
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    padding: 0.5% 2%;
+}
+
+.block4 ul {
+    max-width: 100%;
+    padding: 0% 3%;
+}
+
+.block4 p {
+    margin-bottom: 0.6rem;
+}
+
+.block4 {
+    flex: 2;
+    padding: 2% 3%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.block5 {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-left: 2px solid black;
+}
+
+nav {
+    max-width: 90%;
+    padding: 0% 10%;
+    font-size: 1.2em;
+}
