@@ -1,0 +1,136 @@
+:root {
+    --color-green: #a0ecbc;
+    --color-pink: #ffdcdc;
+    --color-blue: #b8ccfc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+header, footer {
+    min-height: 10vh;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-blue);
+}
+
+main {
+    min-height: 80vh;
+    width: 100%;
+    border-width: 2px 0;
+    border-style: solid;
+    display: grid;
+    grid-template: 1fr 10fr / 3fr 10fr 5fr;
+}
+
+main > div {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3% 4%;
+    border-width: 0 2px;
+    border-style: solid;
+}
+
+.header-caption, .footer-caption {
+    max-width: 50%;
+}
+
+.block1, .block6 {
+    max-width: 40%;
+}
+
+.block2 {
+    grid-row: 1 / -1;
+    padding: 9% 6%;
+}
+
+.block2, .block4 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.block2, .block5 {
+    background-color: var(--color-pink);
+    border-width: 0;
+}
+
+.block3 {
+    background-color: var(--color-green);
+    border-bottom: 2px solid black;
+    grid-area: 1 / 2 / span 1 / span 2;
+    padding: 0.5% 2%;
+}
+
+.block4 ul {
+    max-width: 100%;
+    padding: 0% 3%;
+}
+
+.block5 {
+    justify-content: center;
+}
+
+nav {
+    max-width: 90%;
+    padding: 0% 10%;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 720px), screen and (max-aspect-ratio: 9/16) {
+    body {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    nav {
+        font-size: 1em;
+    }
+    main {
+        grid-template: 2fr 1fr 7fr / repeat(2, 1fr);
+    }
+    .block2 {
+        grid-area: 1 / 1 / span 1 / span 2;
+        border-bottom: 1px solid black;
+    }
+    .block3 {
+        grid-area: 2 / 1 / span 1 / span 2;
+        border-bottom: 1px solid black;
+    }
+    .block4 {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+    .block5 {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+}
