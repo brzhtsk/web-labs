@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05)), url("background.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom:1px solid #c0c0c0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 76px;
+    width: 1140px;
+}
+
+@media screen and (max-width: 1161px) {
+    .header-container {
+        width: 940px;
+    }
+}
+
+@media screen and (max-width: 961px) {
+    .header-container {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 581px) {
+    .header-container {
+        width: 340px;
+    }
+}
+
+.search-bar {
+    display: flex;
+    color: #000000;
+    border: 1px solid #d9d9d9;
+    margin: 15px 0;
+    width: 200px;
+    height: 40px;
+}
+
+.search-bar input {
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #000000;
+    width: 170px;
+}
+
+.search-bar-button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-left: -5px;
+    align-self: center;
+}
+
+.search-bar-button::before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: #7e7e7e;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+.dropdown-button {
+    border: none;
+    background: transparent;
+    align-self: center;
+    padding: 25px 0;
+}
+
+.dropdown-button::before {
+    content: "\f0c9";
+    font-family: FontAwesome;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000000;
+    align-self: center;
+}
+
+@media screen and (max-width: 781px) {
+    .header-container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 620px;
+        height: 120px;
+    }
+
+    .search-bar {
+        display: flex;
+        color: #000000;
+        border: 1px solid #d9d9d9;
+        margin: 15px 0;
+        width: 340px;
+        height: 40px;
+    }
+
+    .search-bar input {
+        padding: 15px 10px;
+        border: none;
+        outline: none;
+        flex: 1;
+        background: transparent;
+        color: #000000;
+        width: 310px;
+        height: 40px;
+    }
+
+    .search-bar-button {
+        border: none;
+        cursor: pointer;
+        background: transparent;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-right: 5px;
+    }
+    
+    .search-bar-button::before {
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 14px;
+        color: #7e7e7e;
+        width: 30px;
+        height: 30px;
+    }
+
+    .dropdown-button {
+        padding-top: 4px;
+        margin-top: -10px;
+    }
+
+    body {
+        background-position: 50% 10%;
+    }
+}
+
+.content-container {
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.intro {
+    margin: 80px 0;
+    color: #111111;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.intro h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.1;
+    font-family: "Oswald", sans-serif;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 10px 535px 0 0;
+    line-height: 1.5;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 900px) {
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro p {
+        max-width: 340px;
+        margin: 10px 10px 0 0;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-bottom: 135px;
+    transform: translateX(-50px);
+    padding: 0 10%;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 340px;
+    text-align: start;
+    min-height: 416px;
+}
+
+@media screen and (max-width: 741px) {
+    .card {
+        background-color: #ffffff;
+        padding: 30px;
+        width: 340px;
+        text-align: start;
+        min-height: 373px;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .card {
+        background-color: #ffffff;
+        padding: 30px;
+        width: 340px;
+        text-align: start;
+        min-height: 332px;
+    }
+}
+
+.card img {
+    width: 280px;
+    margin-bottom: 15px;
+}
+
+.card h1 {
+    color: #f1c50e;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+}
+
+.card p {
+    color: #808080;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #1a1a1a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 120px;
+    width: 1140px;
+}
+
+footer img {
+    margin: 0;
+}
+
+footer nav {
+    margin: 0;
+}
+
+footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-footer-button {
+    display: none;
+}
+
+.dropdown-footer-button::before {
+    display: none;
+}
+
+@media screen and (max-width: 1161px) {
+    .footer-container {
+        width: 940px;
+    }
+
+    footer nav {
+        display: none;
+    }
+    
+    .dropdown-footer-button {
+        border: none;
+        background: transparent;
+        align-self: center;
+        padding: 19px 0;
+        display: block;
+    }
+    
+    .dropdown-footer-button::before {
+        content: "\f0c9";
+        font-family: FontAwesome;
+        font-size: 24px;
+        cursor: pointer;
+        color: #000000;
+        align-self: center;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 961px) {
+    .footer-container {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 721px) {
+    .footer-container {
+        width: 580px;
+    }
+}
+
+@media screen and (max-width: 581px) {
+    .footer-container {
+        width: 340px;
+    }
+}
+ 
+@media screen and (max-width: 341px) {
+    .footer-container {
+        width: 310px;
+    }
+}
